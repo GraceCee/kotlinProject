@@ -1,4 +1,0 @@
-package behavioral
-
-class CommandTest {
-}

@@ -12,9 +12,17 @@ repositories {
     mavenCentral()
 }
 
+//dependencies {
+//    testImplementation(kotlin("test"))
+//
+//
+//}
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation("junit:junit:4.13.1")
+    implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation ("com.willowtreeapps.assertk:assertk-jvm:0.24")
 }
+
 
 tasks.test {
     useJUnitPlatform()

@@ -1,7 +1,0 @@
-package behavioral
-
-
-class StateTest {
-}
-
-

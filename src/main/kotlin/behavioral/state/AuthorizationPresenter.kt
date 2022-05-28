@@ -12,7 +12,7 @@ class AuthorizationPresenter {
 
     val userName: String
         get() {
-            val state = this.state //val enables smart casting of state
+            val state = this.state
             return when (state) {
                 is Authorized -> state.userName
                 is Unauthorized -> "Unknown"
@@ -28,4 +28,6 @@ class AuthorizationPresenter {
     }
 
     override fun toString() = "User '$userName' is logged in: $isAuthorized"
+
+
 }
