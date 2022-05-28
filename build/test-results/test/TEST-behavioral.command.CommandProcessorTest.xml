@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="behavioral.command.CommandProcessorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-28T04:06:08" hostname="GFI05291.local" time="0.024">
+  <properties/>
+  <testcase name="addToQueue()" classname="behavioral.command.CommandProcessorTest" time="0.024"/>
+  <system-out><![CDATA[Adding order with id: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

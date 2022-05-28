@@ -1,0 +1,4 @@
+package behavioral
+
+class CommandTest {
+}
