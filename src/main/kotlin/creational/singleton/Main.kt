@@ -7,7 +7,7 @@ package creational.singleton
  */
 
 fun main(){
-    println("Start")
+    println("******Start****")
     PrinterDriver.print()
-    PrinterDriver.print()
+
 }

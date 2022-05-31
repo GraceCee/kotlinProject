@@ -15,4 +15,12 @@ class CommandProcessor {
             queue.clear()
         }
 
+
+    fun queue(): Int {
+        return queue.size
+    }
+
+
+
+
 }

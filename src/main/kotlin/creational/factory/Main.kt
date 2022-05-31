@@ -1,21 +1,14 @@
 package creational.factory
 
-fun main(){
-    val greeceCurrency = CurrencyFactory.currencyForCountry(Greece("")).code
-    println("Greece currency: $greeceCurrency")
+fun main(args: Array<String>) {
 
-    val usaCurrency = CurrencyFactory.currencyForCountry(Country.USA).code
-    println("USA currency: $usaCurrency")
+    //Car Factory
+    val factory = CarFactory()
+    for (i in 0..2) {
+        val car = factory.randomCar()
+        car.purchasedCar()
 
 
-    /**
-     *
-     * TESTING
-     * assertThat(greeceCurrency).isEqualTo("EUR")
-     * assertThat(usaCurrency).isEqualTo("USD")
-     *
-     *
-     */
-
+    }
 
 }

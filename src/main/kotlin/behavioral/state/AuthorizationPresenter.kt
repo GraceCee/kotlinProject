@@ -15,7 +15,7 @@ class AuthorizationPresenter {
             val state = this.state
             return when (state) {
                 is Authorized -> state.userName
-                is Unauthorized -> "Unknown"
+                is Unauthorized -> "Who You?"
             }
         }
 

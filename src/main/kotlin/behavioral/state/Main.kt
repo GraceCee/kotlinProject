@@ -3,7 +3,7 @@ package behavioral.state
 fun main(){
     val authorizationPresenter = AuthorizationPresenter()
 
-    authorizationPresenter.loginUser("grace")
+    authorizationPresenter.loginUser("Grace")
     println(authorizationPresenter)
 
     authorizationPresenter.logoutUser()

@@ -1,28 +1,35 @@
 package behavioral.state
 
-import assertk.assertThat
-import assertk.assertions.isEqualTo
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.*
 
 
 internal class StateTest {
 
+    val authorizationPresenter = AuthorizationPresenter()
+
+
     @Test
-    fun State() {
+    fun isUserAuthorized(){
 
-        val authorizationPresenter = AuthorizationPresenter()
-
-        authorizationPresenter.loginUser("admin")
-
-        assertThat(authorizationPresenter.isAuthorized).isEqualTo(true)
-        assertThat(authorizationPresenter.userName).isEqualTo("admin")
-
-        authorizationPresenter.logoutUser()
-        println(authorizationPresenter)
-        assertThat(authorizationPresenter.isAuthorized).isEqualTo(false)
-        assertThat(authorizationPresenter.userName).isEqualTo("Unknown")
+        authorizationPresenter.loginUser("Grace")
+        assertTrue(authorizationPresenter.isAuthorized)
 
     }
 
+    @Test
+    fun isUserNotAuthorized(){
+        authorizationPresenter.logoutUser()
+        assertFalse(authorizationPresenter.isAuthorized)
+    }
 
+    @Test
+
+    fun checkingUsers(){
+        authorizationPresenter.loginUser("Grace")
+        assertEquals("Grace", authorizationPresenter.userName)
+
+        authorizationPresenter.logoutUser()
+        assertEquals("Who You?",authorizationPresenter.userName)
+    }
 }

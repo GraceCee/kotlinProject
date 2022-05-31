@@ -1,7 +1,5 @@
 package creational.singleton
 
-import assertk.assertThat
-import assertk.assertions.isSameAs
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -14,8 +12,8 @@ internal class PrinterDriverTest {
         val printerFirst = PrinterDriver.print()
         val printerSecond = PrinterDriver.print()
 
-        assertThat(printerFirst).isSameAs(PrinterDriver.print())
-        assertThat(printerSecond).isSameAs(PrinterDriver.print())
+        assertEquals(printerFirst, PrinterDriver.print())
+
 
 
     }

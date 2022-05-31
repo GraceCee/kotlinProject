@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="structural.flyweight.MainKtTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-31T13:16:41" hostname="GFI05291.local" time="0.027">
+  <properties/>
+  <testcase name="penTestBrushSize()" classname="structural.flyweight.MainKtTest" time="0.025"/>
+  <testcase name="penHashCodes()" classname="structural.flyweight.MainKtTest" time="0.001"/>
+  <system-out><![CDATA[Drawing THICK content in color: Green
+Drawing THIN content in color :Black
+Drawing MEDIUM content in color: Blue
+Drawing THICK content in color: Green
+Drawing THIN content in color :Black
+Drawing MEDIUM content in color: Blue
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

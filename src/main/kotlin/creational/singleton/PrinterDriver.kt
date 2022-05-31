@@ -6,4 +6,5 @@ object PrinterDriver {
     }
 
     fun print() = println("Printing with object: $this")
+
 }
